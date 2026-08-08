@@ -3,6 +3,7 @@
   font-family: 'Inter', sans-serif;
   background: #04050a;
   color: #e8f2ff;
+  --text: #e8f2ff;
   --bg: #02030a;
   --panel: rgba(15, 27, 55, 0.85);
   --panel-strong: rgba(22, 39, 78, 0.95);
@@ -14,7 +15,6 @@
 
 * {
   box-sizing: border-box;
-}
 
 html {
   scroll-behavior: smooth;
@@ -86,6 +86,11 @@ a {
   color: #d1e6ff;
   text-decoration: none;
   font-weight: 500;
+}
+
+.site-nav a.active,
+.site-nav a:hover {
+  color: var(--accent);
 }
 
 .hero-section {
